@@ -11,8 +11,6 @@
 #import "ContainerTransitionDelegate.h"
 #import "SDEPercentInteractiveTransition.h"
 
-
-
 @interface ContainerTransitionContext ()
 
 @property (nonatomic, strong) id<UIViewControllerAnimatedTransitioning> animationController;
@@ -60,6 +58,7 @@
     if (self.privateContainerViewController.interactive) {
         
         SDEPercentInteractiveTransition *interactionController = [delegate containerController:self.privateContainerViewController interactionControllerForAnimationController:self.animationController];
+        
         if (interactionController) {
             [interactionController startInteractiveTransition:self];
         }else{
@@ -97,7 +96,7 @@
 {
     self.interactive = NO;
     self.isCancelled = NO;
-    [self.privateContainerViewController addChildViewController:self.privateToViewController];
+    [self.privateToViewController willMoveToParentViewController:self.privateContainerViewController];
     [self.animationController animateTransition:self];
 }
 
@@ -116,11 +115,13 @@
     
     CFTimeInterval timeOffset = self.privateContainerView.layer.timeOffset - displayLink.duration;
 
+    //不停的调用这个方法,让视图恢复
+    
     if (timeOffset > 0) {
         self.privateContainerView.layer.timeOffset = timeOffset;
         self.transitionPercent = timeOffset / self.transitionDuration;
         [self.privateContainerViewController graduallyChangeTabButtonAppearWithFromIndex:self.fromIndex toIndex:self.toIndex percent:self.transitionPercent];
-    }else{
+    }else{//当timeOffset<=0时,说明已经恢复原来位置了,让displayLink失效
         [displayLink invalidate];
         self.privateContainerView.layer.timeOffset = 0.0;
         self.privateContainerView.layer.speed = 1.0;
@@ -190,12 +191,13 @@
 - (void)finishInteractiveTransition{
     self.interactive = NO;
     CFTimeInterval pauseTime = self.privateContainerView.layer.timeOffset;
+    
     self.privateContainerView.layer.speed = 1.0;
     self.privateContainerView.layer.timeOffset = 0.0;
-    self.privateContainerView.layer.beginTime = 0.0;
-    
+   
     CFTimeInterval timeSincePause = [self.privateContainerView.layer convertTime:CACurrentMediaTime() fromLayer:nil] - pauseTime;
     self.privateContainerView.layer.beginTime = timeSincePause;
+    
     
 
     

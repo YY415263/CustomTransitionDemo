@@ -5,7 +5,7 @@
 //  Created by zhekexinxi on 16/5/24.
 //  Copyright © 2016年 刘士伟. All rights reserved.
 //
-
+//自定义滑动动画
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 typedef enum{

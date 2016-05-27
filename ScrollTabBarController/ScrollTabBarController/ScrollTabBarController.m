@@ -24,6 +24,7 @@
     // Do any additional setup after loading the view.
     
     self.tabBarVCDelegate = [[SDETabBarVCDelegate alloc] init];
+    //设置自定义的代理
     self.delegate = self.tabBarVCDelegate;
     
     

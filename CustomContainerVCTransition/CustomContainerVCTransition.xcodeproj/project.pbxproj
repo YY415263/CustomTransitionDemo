@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE0342E71CF7EDF400742C11 /* ReadMe in Resources */ = {isa = PBXBuildFile; fileRef = FE0342E61CF7EDF400742C11 /* ReadMe */; };
 		FE41D7191CF58E2A00F723B3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE41D7181CF58E2A00F723B3 /* ViewController.m */; };
 		FEF716931CF4409B00BCBBFC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF716921CF4409B00BCBBFC /* main.m */; };
 		FEF716961CF4409B00BCBBFC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF716951CF4409B00BCBBFC /* AppDelegate.m */; };
@@ -41,6 +42,7 @@
 
 /* Begin PBXFileReference section */
 		FE00F9C41CF6C6A400EF7C32 /* CustomHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomHeader.pch; sourceTree = "<group>"; };
+		FE0342E61CF7EDF400742C11 /* ReadMe */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ReadMe; sourceTree = "<group>"; };
 		FE055CF71CF546F400210349 /* ContainerViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContainerViewControllerDelegate.h; sourceTree = "<group>"; };
 		FE41D7171CF58E2A00F723B3 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		FE41D7181CF58E2A00F723B3 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 				FEF7169F1CF4409B00BCBBFC /* LaunchScreen.storyboard */,
 				FEF716A21CF4409B00BCBBFC /* Info.plist */,
 				FEF716911CF4409B00BCBBFC /* Supporting Files */,
+				FE0342E61CF7EDF400742C11 /* ReadMe */,
 			);
 			path = CustomContainerVCTransition;
 			sourceTree = "<group>";
@@ -279,6 +282,7 @@
 			files = (
 				FEF716A11CF4409B00BCBBFC /* LaunchScreen.storyboard in Resources */,
 				FEF7169E1CF4409B00BCBBFC /* Assets.xcassets in Resources */,
+				FE0342E71CF7EDF400742C11 /* ReadMe in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

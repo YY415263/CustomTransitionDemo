@@ -519,6 +519,7 @@
 				FEF715D61CF3F41C00BCBBFC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FEF715D71CF3F41C00BCBBFC /* Build configuration list for PBXNativeTarget "ScrollTabBarControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -527,6 +528,7 @@
 				FEF715D91CF3F41C00BCBBFC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FEF715DA1CF3F41C00BCBBFC /* Build configuration list for PBXNativeTarget "ScrollTabBarControllerUITests" */ = {
 			isa = XCConfigurationList;
@@ -535,6 +537,7 @@
 				FEF715DC1CF3F41C00BCBBFC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

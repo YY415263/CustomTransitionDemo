@@ -49,7 +49,6 @@
     toViewTransform = CGAffineTransformMakeTranslation(-translation, 0);
     fromViewTransform = CGAffineTransformMakeTranslation(translation, 0);
 
-    
     [containerView addSubview:toView];
     
     toView.transform = toViewTransform;
@@ -62,6 +61,7 @@
         fromView.transform = CGAffineTransformIdentity;
         toView.transform = CGAffineTransformIdentity;
         BOOL isCancelled = [transitionContext transitionWasCancelled];
+        
         [transitionContext completeTransition:!isCancelled];
         
     }];

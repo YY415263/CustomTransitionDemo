@@ -64,40 +64,7 @@
     self.window.rootViewController = tabBarViewController;
     [self.window makeKeyAndVisible];
     
-    /*
-     大概介绍每部分的功能
-     
-     1.SlideAnimationController
-     动画控制器,用来实现动画的样式
-     2.SDEPercentInteractiveTransition
-     //交互控制器,用来进行交互
-     3.ContainerTransitionDelegate
-     //转场代理,用来提供动画控制器和交互控制器
-     4.ContainerTransitionContext
-     //转场上下文,用来提供并处理数据源(控制器,控制器视图,容器)
-     
-     */
-    
-    /*
-     视图刚开始,初始化ContainerViewController,在显示的时候调用转场方法,把第一个视图添加为自己的子控制器
-     */
-    
-    
-    
-    /*
-     点击按钮切换流程:
-     1.
-     
-     */
-    
-    
-    
-    /*
-     滑动视图切换流程:
-     
-     
-     */
-    
+       
     
     
     
